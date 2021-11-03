@@ -3,7 +3,6 @@
     Created on : 20-Oct-2021, 10:29:44
     Author     : BritishWaldo
 --%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
