@@ -22,6 +22,31 @@ table
     border-collapse: collapse;
 }
 
+h2
+{
+    text-align: center;
+}
+
+#addUserButton
+{
+    display: inline-block;
+    width: auto;
+    height: auto;
+    font-size: 36px;
+    color: white;
+    vertical-align: middle;
+}
+
+.textAligned
+{
+    vertical-align: middle;
+}
+
+.material-icons.largeIcon
+{
+    font-size: 36px;
+}
+
 input, select
 {
       background-color: #232931;
@@ -49,8 +74,9 @@ h1
 
 #editTable, #newTable
 {
-    width: 100%;
+    width: 500px;
     height: 100%;
+    margin: 0 auto auto auto;
 }
 
 #displayTable
@@ -60,6 +86,7 @@ h1
     background-color: #353e4b;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
+     
 }
 
 #displayTable tr
@@ -70,9 +97,8 @@ h1
 #outerTable
 {
     width: 98%;
-    height: 50%;
+    height: 500px;
     margin: 2% auto;
-    max-height: 90%;
 }
 
 td
@@ -114,7 +140,6 @@ input[type=text]
     width: 100%;
     height: 100%;
     text-align: center;
-    
 }
 
 td
@@ -130,6 +155,25 @@ td
 
 .headerRow
 {
-    border-bottom: #606060 5px double;
+    border-bottom: 0px !important;
+    background: #2a323c;
     height: 25px;
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+    top: 0px;
+}
+
+.secondHeaderRow
+{
+    background: #2a323c;
+    height: 50px;
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+    top: 25px;
 }
