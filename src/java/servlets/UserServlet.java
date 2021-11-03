@@ -52,19 +52,15 @@ public class UserServlet extends HttpServlet
             throws ServletException, IOException
     {
         HttpSession session = request.getSession();
-
-        if( this.userList == null)
+        try
         {
-            try
-            {
-                this.userList = new UserService().getAll();
+            this.userList = new UserService().getAll();
 
-                session.setAttribute("userList", this.userList);
-            }
-            catch (Exception ex)
-            {
-                Logger.getLogger(UserServlet.class.getName()).log(Level.SEVERE, null, ex);
-            }
+            session.setAttribute("userList", this.userList);
+        }
+        catch (Exception ex)
+        {
+            Logger.getLogger(UserServlet.class.getName()).log(Level.SEVERE, null, ex);
         }
 
         String action = request.getParameter("action");
